@@ -1,2 +1,4 @@
 --require test/globalHelper
+--globals expect
+--check-leaks
 --recursive
