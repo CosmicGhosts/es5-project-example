@@ -4,7 +4,7 @@
   "description": "a small example of code and test structure",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha test/**/*_spec.*",
     "test-watch": "npm test -- --watch",
     "lint": "eslint lib/ test/",
     "coverage": "istanbul cover _mocha"
