@@ -1,3 +1,4 @@
+var Promise = require('es6-promise').Promise
 var webdriver = require('webdriverio')
 var seleniumHelpers = require('./helpers/selenium')
 var webdriverRemote = { desiredCapabilities: { browserName: 'phantomjs' } }

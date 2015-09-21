@@ -1,4 +1,4 @@
-var Promise = require('es6-promise')
+var Promise = require('es6-promise').Promise
 var selenium = require('selenium-standalone')
 
 exports.install = function (opts) {
