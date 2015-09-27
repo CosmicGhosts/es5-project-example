@@ -1,4 +1,4 @@
-var lib = require('../lib')
+var lib = require('../../lib')
 
 describe('Library', function () {
   describe('.add', function () {
