@@ -9,7 +9,7 @@
     "lint": "eslint lib/ test/",
     "test": "mocha test/**/*_spec.*",
     "test-watch": "npm test -- --watch",
-    "ci": "npm run lint && npm run coverage"
+    "ci": "npm run lint && npm run coverage && npm run coveralls"
   },
   "keywords": [
     "tests",
