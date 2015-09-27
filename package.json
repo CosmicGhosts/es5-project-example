@@ -4,12 +4,14 @@
   "description": "a small example of code and test structure",
   "main": "index.js",
   "scripts": {
+    "ci": "npm run lint && npm run coverage && npm run coveralls && npm run codeclimate",
+    "codeclimate": "npm run lcov | codeclimate-test-reporter",
     "coverage": "istanbul cover _mocha test/**/*_spec.*",
-    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "coveralls": "npm run lcov | coveralls",
     "lint": "eslint lib/ test/",
+    "lcov": "cat ./coverage/lcov.info",
     "test": "mocha test/**/*_spec.*",
-    "test-watch": "npm test -- --watch",
-    "ci": "npm run lint && npm run coverage && npm run coveralls"
+    "test-watch": "npm test -- --watch"
   },
   "keywords": [
     "tests",
@@ -19,6 +21,7 @@
   "author": "seanstrom",
   "license": "MIT",
   "devDependencies": {
+    "codeclimate-test-reporter": "^0.1.1",
     "coveralls": "^2.11.4",
     "eslint": "^1.3.1",
     "expect": "^1.9.0",
