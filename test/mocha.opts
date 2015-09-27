@@ -2,4 +2,4 @@
 --globals expect
 --check-leaks
 --recursive
---reporter nyan
+--reporter spec
