@@ -6,7 +6,7 @@ var harnessState = harness.setup(config)
 describe('Feature Home Page', function () {
   before(function (done) {
     var self = this
-    self.timeout(5000)
+    self.timeout(8000)
     return harnessState.then(function (state) {
       self.browser = state.browser
       app.listen(9000, done)
