@@ -8,8 +8,10 @@
     "codeclimate": "npm run lcov | codeclimate-test-reporter",
     "coverage": "istanbul cover _mocha test/**/*_spec.*",
     "coveralls": "npm run lcov | coveralls",
+    "features": "mocha test/features/**/*_spec.*",
     "lint": "eslint lib/ test/",
     "lcov": "cat ./coverage/lcov.info",
+    "specs": "mocha test/specs/**/*_spec.*",
     "test": "mocha test/**/*_spec.*",
     "test-watch": "npm test -- --watch"
   },
