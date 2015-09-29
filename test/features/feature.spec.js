@@ -1,6 +1,6 @@
 var harness = require('webdriverio-selenium-harness')
 var config = require('./config')
-var app = require('../../src/app')
+var app = require('../../src').app
 var harnessState = harness.setup(config)
 
 describe('Feature Home Page', function () {
