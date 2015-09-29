@@ -6,13 +6,13 @@
   "scripts": {
     "ci": "npm run lint && npm run coverage && npm run coveralls && npm run codeclimate",
     "codeclimate": "npm run lcov | codeclimate-test-reporter",
-    "coverage": "istanbul cover _mocha test/**/*_spec.*",
+    "coverage": "istanbul cover _mocha test/**/*.spec.*",
     "coveralls": "npm run lcov | coveralls",
-    "features": "mocha test/features/**/*_spec.*",
+    "features": "mocha test/features/**/*.spec.*",
     "lint": "eslint lib/ test/",
     "lcov": "cat ./coverage/lcov.info",
-    "specs": "mocha test/specs/**/*_spec.*",
-    "test": "mocha test/**/*_spec.*",
+    "specs": "mocha test/specs/**/*.spec.*",
+    "test": "mocha test/**/*.spec.*",
     "test-watch": "npm test -- --watch"
   },
   "keywords": [
