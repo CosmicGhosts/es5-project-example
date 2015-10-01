@@ -7,7 +7,7 @@
     "ci": "npm run lint && npm run coverage && npm run codeclimate && npm run coveralls && npm run codecov && npm run codacy",
     "codacy": "npm run lcov | codacy-coverage",
     "codeclimate": "npm run lcov | codeclimate-test-reporter",
-    "codecov": "cat ./coverage/coverage.json | codecov.io.js",
+    "codecov": "cat ./coverage/coverage.json | codecov",
     "coverage": "istanbul cover _mocha test/**/*.spec.*",
     "coveralls": "npm run lcov | coveralls",
     "features": "mocha test/features/**/*.spec.*",
