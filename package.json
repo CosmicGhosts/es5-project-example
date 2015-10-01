@@ -4,7 +4,8 @@
   "description": "a small example of code and test structure",
   "main": "src/index.js",
   "scripts": {
-    "ci": "npm run lint && npm run coverage && npm run codeclimate && npm run coveralls && npm run codecov",
+    "ci": "npm run lint && npm run coverage && npm run codeclimate && npm run coveralls && npm run codecov && npm run codacy",
+    "codacy": "npm run lcov | codacy-coverage",
     "codeclimate": "npm run lcov | codeclimate-test-reporter",
     "codecov": "cat ./coverage/coverage.json | codecov.io.js",
     "coverage": "istanbul cover _mocha test/**/*.spec.*",
@@ -25,6 +26,7 @@
   "author": "seanstrom",
   "license": "MIT",
   "devDependencies": {
+    "codacy-coverage": "^1.1.3",
     "codeclimate-test-reporter": "^0.1.1",
     "codecov.io": "^0.1.6",
     "coveralls": "^2.11.4",
