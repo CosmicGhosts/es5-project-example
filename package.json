@@ -4,8 +4,9 @@
   "description": "a small example of code and test structure",
   "main": "src/index.js",
   "scripts": {
-    "ci": "npm run lint && npm run coverage && npm run codeclimate && npm run coveralls",
+    "ci": "npm run lint && npm run coverage && npm run codeclimate && npm run coveralls && npm run codecov",
     "codeclimate": "npm run lcov | codeclimate-test-reporter",
+    "codecov": "cat ./coverage/coverage.json | codecov.io.js",
     "coverage": "istanbul cover _mocha test/**/*.spec.*",
     "coveralls": "npm run lcov | coveralls",
     "features": "mocha test/features/**/*.spec.*",
@@ -25,6 +26,7 @@
   "license": "MIT",
   "devDependencies": {
     "codeclimate-test-reporter": "^0.1.1",
+    "codecov.io": "^0.1.6",
     "coveralls": "^2.11.4",
     "eslint": "^1.3.1",
     "expect": "^1.9.0",
