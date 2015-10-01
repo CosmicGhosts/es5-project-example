@@ -10,7 +10,7 @@
     "coveralls": "npm run lcov | coveralls",
     "features": "mocha test/features/**/*.spec.*",
     "lcov": "cat ./coverage/lcov.info",
-    "lint": "eslint lib/ test/",
+    "lint": "eslint src/ test/",
     "postinstall": "selenium-standalone install",
     "specs": "mocha test/specs/**/*.spec.*",
     "test": "mocha test/**/*.spec.*",
