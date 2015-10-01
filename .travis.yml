@@ -7,3 +7,7 @@ node_js:
   - "0.10"
 
 after_script: "npm run ci"
+
+addons:
+  code_climate:
+    repo_token: b5af5c25475a483624e31bc6435ebaef5eb67c5c811f5a298a67857e4f4754c4
