@@ -1,5 +1,5 @@
 {
-  "name": "es5-project-template",
+  "name": "es5-project-example",
   "version": "0.0.0",
   "description": "a small example of code and test structure",
   "main": "src/index.js",
